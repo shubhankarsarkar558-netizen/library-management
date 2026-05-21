@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  
+  <nav class="navbar">
+    <h1>📚 Library Management</h1>
+
+    <div class="nav-actions">
+      <input type="text" id="searchInput" placeholder="Search books...">
+      <button id="darkBtn">🌙</button>
+    </div>
+  </nav>
+
+  
+  <section class="dashboard">
+
+    <div class="dashboard-card">
+      <h2>Total Books</h2>
+      <p id="totalBooks">100</p>
+    </div>
+
+    <div class="dashboard-card">
+      <h2>Borrowed</h2>
+      <p id="borrowedBooks">35</p>
+    </div>
+
+    <div class="dashboard-card">
+      <h2>Available</h2>
+      <p id="availableBooks">65</p>
+    </div>
+
+  </section>
+
+ 
+  <section class="add-book-section">
+
+    <h2>Add New Book</h2>
+
+    <div class="form-group">
+      <input type="text" placeholder="Book Name">
+      <input type="text" placeholder="Author Name">
+      <button>Add Book</button>
+    </div>
+
+  </section>
+
+  
+  <section class="books-section">
+
+    <h2>Books Collection</h2>
+
+    <div class="book-container" id="bookContainer">
+
+     
+
+      <div class="book-card">
+        <h3>JavaScript Basics</h3>
+
+        <p>Author: John Doe</p>
+
+        <span class="status available">
+          Available
+        </span>
+
+        <div class="btn-group">
+          <button class="borrow-btn">
+            Borrow
+          </button>
+
+          <button class="delete-btn">
+            Delete
+          </button>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <h3>Python Programming</h3>
+
+        <p>Author: Alex Smith</p>
+
+        <span class="status borrowed">
+          Borrowed
+        </span>
+
+        <div class="btn-group">
+          <button class="return-btn">
+            Return
+          </button>
+
+          <button class="delete-btn">
+            Delete
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
